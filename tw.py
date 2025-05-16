@@ -37,7 +37,7 @@ def upload_image(image_path):
 def post_tweet(day_count, image_path, tags_list):
     hashtags = "#gfg160 #geekstreak2025"
     tags = " ".join([f"@{tag}" for tag in tags_list])
-    text = f"Day {day_count} {hashtags} {tags} tweet bot testing"
+    text = f"Day {day_count} {hashtags} {tags}"
 
     media_id = upload_image(image_path)
 
