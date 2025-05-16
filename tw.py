@@ -37,14 +37,14 @@ def upload_image(image_path):
 def post_tweet(day_count, image_path, tags_list):
     hashtags = "#gfg160 #geekstreak2025"
     tags = " ".join([f"@{tag}" for tag in tags_list])
-    text = f"Day {day_count} today! {hashtags} {tags} tweet bot testing"
+    text = f"Day {day_count} {hashtags} {tags} tweet bot testing"
 
     media_id = upload_image(image_path)
 
     # posting tweet using v2 and combing with image uploaded
     response = client.create_tweet(text=text, media_ids=[media_id])
     url=get_url(response.data['text'])
-    print(f"Tweet posted! ID: {response.data['id']}\nView Tweet: {url}")
+    print(f"Tweet posted!\nID: {response.data['id']}\nView Tweet: {url}")
 
 # set day accoding to date
 DAY_FILE="day_data.json"
@@ -70,8 +70,9 @@ def load_day():
        data={"day":day_today,"last_posted":current_date.isoformat()}
        with open(DAY_FILE,"w") as my_file:
            json.dump(data,my_file)
-
-   return(day_today)
+       
+       return(day_today)
+   return data["day"]
 
 if __name__ == "__main__":
     day = load_day()
@@ -84,4 +85,4 @@ if __name__ == "__main__":
         sys.exit(1)
     tags_to_mention = ["geeksforgeeks"]
 
-    # post_tweet(day, image_path, tags_to_mention)
+    post_tweet(day, image_path, tags_to_mention)
