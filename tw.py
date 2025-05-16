@@ -22,6 +22,11 @@ client = tweepy.Client(
     access_token_secret=os.getenv("ACCESS_TOKEN_SECRET")
 )
 
+#get url of the post
+def get_url(text):
+    index=text.find("https:")
+    return (text[index:])
+
 #upload image using v1.1 and get id
 def upload_image(image_path):
     media = api.media_upload(image_path)
@@ -30,13 +35,14 @@ def upload_image(image_path):
 def post_tweet(day_count, image_path, tags_list):
     hashtags = "#gfg160 #geekstreak2025"
     tags = " ".join([f"@{tag}" for tag in tags_list])
-    text = f"Day {day_count} today! {hashtags} {tags}"
+    text = f"Day {day_count} today! {hashtags} {tags} tweet bot testing"
 
     media_id = upload_image(image_path)
 
     # posting tweet using v2 and combing with image uploaded
     response = client.create_tweet(text=text, media_ids=[media_id])
-    print(f"Tweet posted! ID: {response.data['id']}")
+    url=get_url(response.data['text'])
+    print(f"Tweet posted! ID: {response.data['id']}\nView Tweet: {url}")
 
 if __name__ == "__main__":
     day = 41
