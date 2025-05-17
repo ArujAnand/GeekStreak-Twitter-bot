@@ -9,5 +9,8 @@ Automate your GeekStreak tweeting workflow with this command-line tool. After ta
 ## Setup Instructions
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/twitter-daily-bot.git
-cd twitter-daily-bot
+git clone https://github.com/ArujAnand/GeekStreak-Twitter-bot
+cd GeekStreak-Twitter-bot
+### 2. Install Dependencies
+```bash
+pip install tweepy python-dotenv
