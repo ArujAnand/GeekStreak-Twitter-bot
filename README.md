@@ -11,6 +11,8 @@ Automate your GeekStreak tweeting workflow with this command-line tool. After ta
 ```bash
 git clone https://github.com/ArujAnand/GeekStreak-Twitter-bot
 cd GeekStreak-Twitter-bot
+````
 ### 2. Install Dependencies
 ```bash
 pip install tweepy python-dotenv
+```
