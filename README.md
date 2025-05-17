@@ -3,3 +3,5 @@ Automate your GeekStreak tweeting workflow with this command-line tool. After ta
 
 [Know more about gfg160](https://x.com/geeksforgeeks/status/1857321074993549547)
 ## 📦 Features
+- ✏️ Tags users and adds hashtags automatically
+- 🕒 Track day progression using a local JSON file
