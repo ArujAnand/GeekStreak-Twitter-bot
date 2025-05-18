@@ -47,5 +47,4 @@ This will:
 |-----------------|--------------------------------------------|
 | `tw.py`         | Main bot script                            |
 | `.env`          | Stores Twitter API credentials    |
-| `day_data.json` | Keeps track of the current day + date      |
-                    auto created as day 1 if ran first time    
+| `day_data.json` | Keeps track of the current day + date, auto created as day 1 if ran first time |    
