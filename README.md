@@ -34,3 +34,11 @@ How to Get These Keys:
 4. Generate and copy to .env:
    - Consumer Key & Secret
    - Access Token & Secret
+## How to use
+Run the script from the terminal, passing the image path of the solved challenge
+```python tw.py "C:\\Users\\YourName\\Pictures\\image.jpg"```
+This will:
+   - Read current day from day_data.json
+   - Check today's date
+   - Post the tweet with given image and text
+   - Display the link to directly view the tweet
