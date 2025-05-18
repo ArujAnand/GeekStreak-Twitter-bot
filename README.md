@@ -36,9 +36,16 @@ How to Get These Keys:
    - Access Token & Secret
 ## How to use
 Run the script from the terminal, passing the image path of the solved challenge
-```python tw.py "C:\\Users\\YourName\\Pictures\\image.jpg"```
+```python tw.py "C:\Users\xyz\Pictures\image.jpg"```
 This will:
    - Read current day from day_data.json
    - Check today's date
    - Post the tweet with given image and text
    - Display the link to directly view the tweet
+## Main Components
+| Component       | Purpose                                    |
+|-----------------|--------------------------------------------|
+| `tw.py`         | Main bot script                            |
+| `.env`          | Stores Twitter API credentials    |
+| `day_data.json` | Keeps track of the current day + date      |
+|                 | auto created as day 1 if ran first time    |
