@@ -31,3 +31,6 @@ How to Get These Keys:
    - App Type: ```Web App```
    - Callback URL: ```http://localhost/``` or any dummy URL
    - Permissions: ```Read and Write```
+4. Generate and copy to .env:
+  - Consumer Key & Secret
+  - Access Token & Secret
