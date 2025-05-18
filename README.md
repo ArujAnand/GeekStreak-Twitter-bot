@@ -50,3 +50,4 @@ This will:
 | `day_data.json` | Keeps track of the current day + date, auto created as day 1 if ran first time |
 
 ## In Action
+[![Demo Video](https://img.youtube.com/vi/gRdNdPiJP_c/0.jpg)](https://www.youtube.com/watch?v=gRdNdPiJP_c)
