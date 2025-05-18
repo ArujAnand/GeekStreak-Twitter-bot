@@ -28,6 +28,6 @@ How to Get These Keys:
 1. Go to [Twitter/X Developer Portal](https://developer.x.com/en)
 2. Create a project and an app (u might also get one by default)
 3. Under User Authentication Settings enable:
-   -App Type: ```bash Web App```
-   -Callback URL: ```bash http://localhost/``` or any dummy URL
-   -Permissions: ```bash Read and Write```
+   - App Type: ```bash Web App```
+   - Callback URL: ```bash http://localhost/``` or any dummy URL
+   - Permissions: ```bash Read and Write```
